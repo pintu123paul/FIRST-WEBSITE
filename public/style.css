@@ -1,5 +1,5 @@
 html, body{
-    height: 1900px;
+    height: 1400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +27,8 @@ body{
 	display: inline-block;
 	padding-right: 50px;
 	font-size: 12px;
-	font-weight: bold;
+	font-weight: 600;
+	font-family:sans-serif;
 }
 .nav > li > a {
 	text-decoration: none;
@@ -36,7 +37,7 @@ body{
 
 }
 .nav > li > a:hover{
-	color: #c1c1c1;
+	color: #db7c00;
 }
 
 .logo {
@@ -52,6 +53,13 @@ body{
 .logo > a {
 	text-decoration: none;
 	color: #fff;
+
+}
+.logo > a:hover {
+	text-decoration: none;
+	color:#db7c00;
+
+};
 
 }
 
@@ -395,8 +403,78 @@ audio {
 	font-family:sans-serif;
 	line-height:150%;
 	letter-spacing:.25px;
+	cursor: default;
 	
 
 }
+/*leftside */
+.leftside {
+    display: column-reverse;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.leftside li{
+    list-style: none;
+    display:;
+	 display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+	
+  
+}
+.leftside li a{
+    width: 80px;
+    height: 80px;
+    font-size: 110px;
+    margin: 30px 0px;
+    display: block;
+    border-radius; 50%;
+}
+.leftside li a{
+    position: relative;
+    color: white;
+    transition: .7s;
+}
+.leftside li a:hover {
+    transform: translate(30px);
+	color: lightgrey;
+}
 
+
+/*rightside */
+.rightside {
+    display: column-reverse;
+    position: absolute;
+    top: 23%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.rightside li{
+    list-style: none;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	
+}
+.rightside li p{
+    width: 600px;
+    height: 80px;
+    font-size: 14px;
+    margin: 30px 0px;
+    display: block;
+    border-radius; 50%;
+	cursor:default;
+	color: white;
+}
+
+button {
+
+    background: none;
+    border: none !important;
+    font-size:0;
+}
 
